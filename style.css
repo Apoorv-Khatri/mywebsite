@@ -1,0 +1,245 @@
+@import url('https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
+  font-size: 17px;
+  color: #111;
+  background: #fdfdfd;
+  line-height: 1.75;
+}
+
+/* ── Header ── */
+header {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 40px 0 30px;
+  text-align: center;
+  border-bottom: 4px solid #c9a84c;
+}
+
+header h1 {
+  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
+  font-size: 2.4em;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+header p.title {
+  font-size: 1.05em;
+  color: #c9d8e8;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ── Nav ── */
+nav {
+  background: #14304f;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
+  color: #d8e8f5;
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 0.95em;
+  letter-spacing: 0.4px;
+  border-right: 1px solid #2a4f72;
+  transition: background 0.2s;
+}
+
+nav a:first-child { border-left: 1px solid #2a4f72; }
+nav a:hover, nav a.active { background: #c9a84c; color: #fff; }
+
+/* ── Layout ── */
+.container {
+  max-width: 860px;
+  margin: 50px auto;
+  padding: 0 28px;
+}
+
+.container.two-col {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+/* ── Headings ── */
+h2 {
+  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
+  font-size: 1.2em;
+  color: #1a3a5c;
+  border-bottom: 1.5px solid #c9a84c;
+  padding-bottom: 5px;
+  margin-bottom: 16px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+}
+
+section { margin-bottom: 40px; }
+
+p { margin-bottom: 14px; color: #222; }
+
+a { color: #1a3a5c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Sidebar (Home) ── */
+.sidebar { text-align: center; }
+
+.sidebar .photo-placeholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #d0dce8;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  color: #5a7a96;
+  border: 3px solid #1a3a5c;
+}
+
+.sidebar .contact-info {
+  font-size: 0.88em;
+  color: #444;
+  line-height: 2;
+}
+
+/* ── Research interests tags ── */
+.research-interests ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.research-interests ul li {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.87em;
+  font-style: italic;
+}
+
+/* ── Papers ── */
+.paper {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.paper:last-child { border-bottom: none; }
+
+.paper .paper-title {
+  font-weight: bold;
+  color: #1a3a5c;
+  font-size: 1em;
+}
+
+.paper .paper-meta {
+  font-size: 0.88em;
+  color: #555;
+  font-style: italic;
+  margin: 3px 0;
+}
+
+.paper .abstract {
+  font-size: 0.92em;
+  color: #333;
+  margin-top: 6px;
+}
+
+/* ── CV entries ── */
+.cv-entry {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.cv-year {
+  font-size: 0.87em;
+  color: #777;
+  padding-top: 2px;
+  font-style: italic;
+}
+
+.cv-detail strong { display: block; color: #1a3a5c; }
+.cv-detail span { font-size: 0.91em; color: #444; }
+
+.download-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 9px 22px;
+  background: #1a3a5c;
+  color: #fff;
+  font-size: 0.92em;
+  border-radius: 2px;
+  font-style: italic;
+}
+
+.download-btn:hover { background: #c9a84c; text-decoration: none; }
+
+/* ── Teaching table ── */
+table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #1a3a5c;
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+}
+td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; color: #333; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: #f5f3ee; }
+
+/* ── Contact grid ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px 16px;
+  font-size: 0.97em;
+}
+
+.contact-label { font-weight: bold; color: #1a3a5c; padding-top: 2px; }
+.contact-value { color: #333; }
+
+.map-placeholder {
+  margin-top: 20px;
+  background: #dce5ee;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a7a96;
+  font-size: 0.9em;
+  font-style: italic;
+  border: 1px solid #b0c4d8;
+  border-radius: 3px;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 28px;
+  font-size: 0.82em;
+  font-style: italic;
+  color: #999;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .container.two-col { grid-template-columns: 1fr; }
+  .sidebar { margin-bottom: 20px; }
+  .cv-entry { grid-template-columns: 1fr; }
+}
