@@ -6,7 +6,7 @@ body {
   font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
   font-size: 17px;
   color: #111;
-  background: #fdfdfd;
+  background: #f9f7f2;
   line-height: 1.75;
 }
 
@@ -199,7 +199,7 @@ th {
 }
 td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; color: #333; }
 tr:last-child td { border-bottom: none; }
-tr:nth-child(even) td { background: #f5f3ee; }
+tr:nth-child(even) td { background: #eeebe3; }
 
 /* ── Contact grid ── */
 .contact-grid {
