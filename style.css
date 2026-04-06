@@ -50,6 +50,7 @@ header .subtitle {
   height: 140px;
   border-radius: 4px;
   background: #ebebeb;
+  display: block;
 }
 
 .about-text h2 {
