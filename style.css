@@ -1,299 +1,180 @@
-@import url('https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
-  font-size: 17px;
-  color: #111;
-  background: #f9f7f2;
-  line-height: 1.75;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 32px 60px;
 }
 
 /* ── Header ── */
 header {
-  background: #1a3a5c;
-  color: #fff;
-  padding: 40px 0 30px;
-  text-align: center;
-  border-bottom: 4px solid #c9a84c;
+  margin-bottom: 52px;
 }
 
 header h1 {
-  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
-  font-size: 2.4em;
-  letter-spacing: 1px;
-  font-weight: normal;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #111;
 }
 
-header p.title {
-  font-size: 1.05em;
-  color: #c9d8e8;
+header .subtitle {
   margin-top: 6px;
-  font-style: italic;
-}
-
-/* ── Nav ── */
-nav {
-  background: #14304f;
-  display: flex;
-  justify-content: center;
-}
-
-nav a {
-  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
-  color: #d8e8f5;
-  text-decoration: none;
-  padding: 12px 28px;
   font-size: 0.95em;
-  letter-spacing: 0.4px;
-  border-right: 1px solid #2a4f72;
-  transition: background 0.2s;
+  color: #666;
+  font-weight: 300;
 }
 
-nav a:first-child { border-left: 1px solid #2a4f72; }
-nav a:hover, nav a.active { background: #c9a84c; color: #fff; }
-
-/* ── Layout ── */
-.container {
-  max-width: 860px;
-  margin: 50px auto;
-  padding: 0 28px;
-}
-
-.container.two-col {
+/* ── About ── */
+.about {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 44px;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
   align-items: start;
+  margin-bottom: 52px;
 }
-
-/* ── Headings ── */
-h2 {
-  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
-  font-size: 1.2em;
-  color: #1a3a5c;
-  border-bottom: 1.5px solid #c9a84c;
-  padding-bottom: 5px;
-  margin-bottom: 16px;
-  font-weight: normal;
-  letter-spacing: 0.2px;
-}
-
-section { margin-bottom: 40px; }
-
-p { margin-bottom: 14px; color: #222; }
-
-a { color: #1a3a5c; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* ── Sidebar (Home) ── */
-.sidebar { text-align: center; }
 
 .photo-placeholder {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: #d0dce8;
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8em;
-  color: #5a7a96;
-  border: 3px solid #1a3a5c;
+  width: 140px;
+  height: 140px;
+  border-radius: 4px;
+  background: #ebebeb;
 }
 
-.sidebar .contact-info {
-  font-size: 0.88em;
-  color: #444;
-  line-height: 2;
-}
-
-/* ── Research interests tags ── */
-.research-interests ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.research-interests ul li {
-  background: #1a3a5c;
-  color: #fff;
-  padding: 4px 14px;
-  border-radius: 20px;
-  font-size: 0.87em;
-  font-style: italic;
-}
-
-/* ── Papers ── */
-.paper {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.paper:last-child { border-bottom: none; }
-
-.paper .paper-title {
-  font-weight: bold;
-  color: #1a3a5c;
-  font-size: 1em;
-}
-
-.paper .paper-meta {
-  font-size: 0.88em;
-  color: #555;
-  font-style: italic;
-  margin: 3px 0;
-}
-
-.paper .abstract {
-  font-size: 0.92em;
-  color: #333;
-  margin-top: 6px;
-}
-
-/* ── CV entries ── */
-.cv-entry {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 10px;
+.about-text h2 {
+  font-size: 0.72em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
   margin-bottom: 14px;
 }
 
-.cv-year {
-  font-size: 0.87em;
-  color: #777;
-  padding-top: 2px;
-  font-style: italic;
-}
-
-.cv-detail strong { display: block; color: #1a3a5c; }
-.cv-detail span { font-size: 0.91em; color: #444; }
-
-.download-btn {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 9px 22px;
-  background: #1a3a5c;
-  color: #fff;
-  font-size: 0.92em;
-  border-radius: 2px;
-  font-style: italic;
-}
-
-.download-btn:hover { background: #c9a84c; text-decoration: none; }
-
-/* ── Teaching table ── */
-table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
-th {
-  text-align: left;
-  padding: 10px 12px;
-  background: #1a3a5c;
-  color: #fff;
-  font-weight: normal;
-  font-style: italic;
-}
-td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; color: #333; }
-tr:last-child td { border-bottom: none; }
-tr:nth-child(even) td { background: #eeebe3; }
-
-/* ── Contact grid ── */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 10px 16px;
+.about-text p {
+  color: #333;
+  margin-bottom: 12px;
   font-size: 0.97em;
 }
 
-.contact-label { font-weight: bold; color: #1a3a5c; padding-top: 2px; }
-.contact-value { color: #333; }
-
-.map-placeholder {
-  margin-top: 20px;
-  background: #dce5ee;
-  height: 220px;
+.interests {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #5a7a96;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+.interests span {
+  font-size: 0.8em;
+  color: #555;
+  border: 1px solid #d8d8d8;
+  padding: 3px 11px;
+  border-radius: 20px;
+}
+
+.contact-links {
+  font-size: 0.88em;
+  color: #444;
+}
+
+.contact-links a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-links a:hover {
+  border-bottom-color: #1a1a1a;
+}
+
+.sep {
+  margin: 0 7px;
+  color: #bbb;
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 0 0 48px;
+}
+
+/* ── Papers ── */
+.papers h2 {
+  font-size: 0.72em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 28px;
+}
+
+.paper {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.paper:last-child {
+  border-bottom: none;
+}
+
+.paper-title {
+  font-size: 0.97em;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.paper-meta {
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.paper-abstract {
   font-size: 0.9em;
-  font-style: italic;
-  border: 1px solid #b0c4d8;
-  border-radius: 3px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.paper-links {
+  font-size: 0.85em;
+}
+
+.paper-links a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.paper-links a:hover {
+  border-bottom-color: #333;
 }
 
 /* ── Footer ── */
 footer {
-  text-align: center;
-  padding: 28px;
-  font-size: 0.82em;
-  font-style: italic;
-  color: #999;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
-}
-
-/* ── Gallery (Pictures page) ── */
-.gallery-intro { margin-bottom: 32px; }
-.gallery-intro p { color: #555; font-style: italic; }
-
-.gallery-section { margin-bottom: 52px; }
-
-.gallery-city {
-  font-family: "Computer Modern Serif", "Latin Modern", Georgia, serif;
-  font-size: 1.1em;
-  font-weight: normal;
-  color: #1a3a5c;
-  border-bottom: 1.5px solid #c9a84c;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  letter-spacing: 0.3px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border: 1px solid #d8d0c4;
-  border-radius: 3px;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-  transition: box-shadow 0.2s;
-}
-
-.gallery-item:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.13); }
-
-.gallery-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.gallery-item:hover img { transform: scale(1.04); }
-
-.gallery-caption {
-  padding: 8px 12px;
-  font-size: 0.85em;
-  color: #555;
-  font-style: italic;
-  text-align: center;
-  background: #faf8f3;
-  border-top: 1px solid #eae5dc;
+  margin-top: 60px;
+  font-size: 0.78em;
+  color: #bbb;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 20px;
 }
 
 /* ── Responsive ── */
-@media (max-width: 640px) {
-  .container.two-col { grid-template-columns: 1fr; }
-  .sidebar { margin-bottom: 20px; }
-  .cv-entry { grid-template-columns: 1fr; }
+@media (max-width: 600px) {
+  .page { padding: 48px 20px 48px; }
+  .about { grid-template-columns: 1fr; }
+  .photo-placeholder { width: 110px; height: 110px; }
 }
