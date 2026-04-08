@@ -4,71 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apoorv Khatri</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="page">
+  <!-- Masthead -->
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <nav class="greedy-nav">
+        <a class="site-title" href="#">Apoorv Khatri</a>
+        <ul class="visible-links"></ul>
+      </nav>
+    </div>
+  </div>
 
-    <!-- Header -->
-    <header>
-      <h1>Apoorv Khatri</h1>
-      <p class="subtitle">PhD Finance Student, HKUST Business School</p>
-    </header>
+  <!-- Page body -->
+  <div id="main">
 
-    <!-- About -->
-    <section class="about">
-      <div class="about-photo">
-        <img class="photo-placeholder" src="https://api.dicebear.com/9.x/lorelei/svg?seed=ApoorvKhatri&backgroundColor=ebebeb" alt="Apoorv Khatri" />
+    <!-- Sidebar -->
+    <div class="sidebar sticky">
+      <div class="author__avatar">
+        <img src="https://api.dicebear.com/9.x/initials/svg?seed=AK&backgroundColor=c8d8e8&fontFamily=Arial&fontSize=38&fontWeight=600"
+             alt="Apoorv Khatri" />
       </div>
-      <div class="about-text">
-        <h2>About</h2>
-        <p>
-          I am a PhD student in Finance at the Business School, The Hong Kong University
-          of Science and Technology. My research interests are Macro-Finance, Financial
-          Intermediation, and Corporate Finance.
-        </p>
-        <p>
-          Prior to my doctoral studies, I was a Pre-Doctoral Fellow at the Centre for
-          Advanced Financial Research and Learning, Reserve Bank of India.
-          I hold an MA in Economics from the Delhi School of Economics,
-          and a degree in Civil Engineering from the Vellore Institute of Technology, Vellore.
-        </p>
-
-        <div class="contact-links">
-          <a href="mailto:apoorv.khatri77@gmail.com">apoorv.khatri77@gmail.com</a>
-          <span class="sep">&middot;</span>
-          <a href="#">CV</a>
+      <div class="author__content">
+        <h3 class="author__name">Apoorv Khatri</h3>
+        <div class="author__bio">
+          <p>PhD Finance<br />The Hong Kong University of Science and Technology</p>
         </div>
       </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Working Papers -->
-    <section class="papers">
-      <h2>Working Papers</h2>
-
-      <div class="paper">
-        <div class="paper-title">Paper Title One</div>
-        <div class="paper-meta">Apoorv Khatri &mdash; <em>Job Market Paper</em>, 2025</div>
-        <p class="paper-abstract">
-          Brief abstract or one-sentence description of this paper goes here.
-        </p>
-        <div class="paper-links">
-          <a href="#">PDF</a>
-          <span class="sep">&middot;</span>
-          <a href="#">SSRN</a>
-        </div>
+      <div class="author__urls-wrapper">
+        <ul class="author__urls">
+          <li>
+            <a href="mailto:apoorv.khatri77@gmail.com">
+              <i class="fas fa-fw fa-envelope-square"></i>
+              <span class="label">Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-fw fa-file-pdf"></i>
+              <span class="label">CV</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/khatrivial" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-fw fa-twitter-square"></i>
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/apoorv-khatri/" rel="noopener noreferrer" target="_blank">
+              <i class="fab fa-fw fa-linkedin"></i>
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
       </div>
+    </div>
 
+    <!-- Main content -->
+    <article class="page">
+      <div class="page__inner-wrap">
+        <section class="page__content">
 
-    </section>
+          <p>
+            Welcome! I am a <strong>PhD Student in Finance</strong> at the
+            Hong Kong University of Science and Technology, Business School.
+            My research lies at the intersection of Macro-Finance, Financial
+            Intermediation, and Corporate Finance.
+          </p>
+          <p>
+            Before joining HKUST, I was a Pre-Doctoral Fellow at the Centre for
+            Advanced Financial Research and Learning at the Reserve Bank of India.
+            I hold an MA in Economics from the Delhi School of Economics and a
+            degree in Civil Engineering from the Vellore Institute of Technology.
+          </p>
 
+          <a id="research"></a>
+          <h2>Research</h2>
+
+          <h3>Working Papers</h3>
+
+          <p>
+            <strong>New Technologies, Irrational Investors and Herding</strong><br />
+            with Kaushalendra Kishore<br />
+            <a href="Irrational_CEOs.pdf">(PDF)</a>
+          </p>
+          <details>
+            <summary>Abstract</summary>
+            <p>
+              This paper develops a rational expectations framework to explain how financial
+              crises can emerge in an economy where some decision-makers are irrational. Investors
+              choose between a new risky asset and a safe asset. Irrational investors always invest
+              in risky assets, whereas rational investors only invest when they are confident enough
+              that the asset holds high value. Investors cannot distinguish whether others'
+              investments stem from private information or irrationality, creating a
+              signal-confounding problem. This may lead uninformed rational investors to herd and
+              invest, even in the absence of informative signals, thus leading to a crisis. Our
+              model explains historical episodes where the advent of new technologies and the
+              presence of novice investors lead to a bubble.
+            </p>
+          </details>
+
+        </section>
+      </div>
+    </article>
+
+  </div><!-- end #main -->
+
+  <div id="footer" class="page__footer">
     <footer>
-      &copy; 2026 Apoorv Khatri &mdash; Last updated April 2026
+      <div class="page__footer-copyright">
+        &copy; 2026 Apoorv Khatri. Last updated April 2026.
+      </div>
     </footer>
-
   </div>
 
 </body>
